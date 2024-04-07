@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body{display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 750px;
+    height: 400px;
+    
+}   
+
+.rectangulo{
+    width:250px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.primero{
+    background-color:hsl(31, 77%, 52%)
+}
+
+.segundo{
+    background-color:hsl(184, 100%, 22%);
+}
+
+.tercero{
+    background-color:hsl(179, 100%, 13%);
+}
+
+h2{
+    color:hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    width: 75%;
+    border-radius:50px; 
+}
+
+button:hover{
+    color:red;
+    background-color: black;
+}
+
+.boton-1{
+    color:hsl(31, 77%, 52%);
+}
+
+.boton-2{
+    color:hsl(184, 100%, 22%);
+}
+
+.boton-3{
+    color:hsl(179, 100%, 13%);
+}
+
+img{
+    width: 50px;
+}
+
+
+@media(max-width:790px){
+    .container{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        height:600px;
+        width:200px;
+    }
+
+    .rectangulo{
+        height:200px;
+        width:200px;
+        padding:10px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    button{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    img{
+        width:30px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+}
