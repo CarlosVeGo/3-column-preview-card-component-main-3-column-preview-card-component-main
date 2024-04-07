@@ -68,6 +68,7 @@ button{
 button:hover{
     color:red;
     background-color: black;
+    cursor: pointer;
 }
 
 .boton-1{
